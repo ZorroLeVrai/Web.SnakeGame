@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts/main.js" defer type="module"></script>
+  </head>
+  <body class="flex-center no-margin black-background">
+    <div id="game-board" class="board-grid vmin-100 grey-background"></div>
+
+    <div
+        id="confirm-form"
+        class="
+          absolute-center
+          front-1
+          lightgrey-background
+          flex-column
+          removed
+        "
+      >
+        <div class="flex-row flex-fixed blue-grey-background padding-02rem">
+          <span class="centered flex-expanded">Game over</span>
+        </div>
+        <div class="flex-expanded padding-02rem margin-02rem">
+          <p>Game over.</p>
+          <p>Do you want to restart the game ?</p>
+        </div>
+        <div class="flex-row flex-center flex-fixed padding-02rem margin-02rem">
+          <button id="yes-button" class="padding-02rem margin-01rem">Yes</button>
+          <button id="no-button" class="padding-02rem margin-01rem">No</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
